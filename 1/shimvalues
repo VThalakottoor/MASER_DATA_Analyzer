@@ -1,0 +1,61 @@
+# Wed Aug 09 12:51:56 2023
+#$$PROBEIDENTIFIER=W8321_0001
+#$$PROBENAME=TXI
+#$$SHIMID=323232
+#
+# Active Shim Gradients
+#
+Z           		18935           
+Z2          		23052           
+Z3          		28859           
+Z4          		-1057           
+Z5          		-5622           
+X           		10046           
+XZ          		-11419          
+XZ2         		-72631          
+Y           		-19287          
+YZ          		-30954          
+YZ2         		-116555         
+XY          		-2420           
+XYZ         		-59600          
+(X2-Y2)     		17845           
+(X2-Y2)Z    		-400            
+X3          		0               
+Y3          		0               
+#
+# Lock Parameter
+#
+FIELD		-95.277 
+LOCKPHASE		120.600 
+LOCKPOWER		-10.000 
+LOCKGAIN		116.500 
+LOCKDC		-25.300 
+LOCKSHIFT		2.490   
+LOOPGAIN		5.000   
+LOOPTIME		0.250   
+LOOPFILTER		500.000 
+#
+IEEE64_VERSION_CODE 1
+#
+# Shim currents 
+#
+SHIM_SETTING [1 ]  9183.47500000   
+SHIM_SETTING [2 ]  11410.74000000  
+SHIM_SETTING [3 ]  15179.83400000  
+SHIM_SETTING [4 ]  -555.98200000   
+SHIM_SETTING [5 ]  -2957.17200000  
+SHIM_SETTING [6 ]  5284.19600000   
+SHIM_SETTING [7 ]  -6006.39400000  
+SHIM_SETTING [8 ]  -38203.90600000 
+SHIM_SETTING [9 ]  9386.47000000   
+SHIM_SETTING [10]  -1272.92000000  
+SHIM_SETTING [11]  -10144.96200000 
+SHIM_SETTING [12]  -16281.80400000 
+SHIM_SETTING [13]  -61307.93000000 
+SHIM_SETTING [14]  632.77800000    
+SHIM_SETTING [15]  0.00000000      
+SHIM_SETTING [16]  -210.40000000   
+SHIM_SETTING [17]  -8943.05200000  
+SHIM_SETTING [18]  -31349.60000000 
+SHIM_SETTING [19]  0.00000000      
+SHIM_SETTING [20]  0.00000000      

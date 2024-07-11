@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 4.1.4
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= vineeth
+$$ 2024-02-05 11:49:31.526 +0100  vineeth@jeener-Precision-5820-Tower
+$$ /media/HD2/nmrdata/Vineeth/nmr/MASER_2023_08_09_RD_metanol-water/502/pdata/1/outd
+$$ process /opt/topspin4.1.4/prog/mod/proc1d
+##$CURPLOT= <PDF Complete>
+##$CURPRIN= <$PDF Complete>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_H.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

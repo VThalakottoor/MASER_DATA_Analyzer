@@ -1,0 +1,85 @@
+# 1 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+;zgcw
+;avance-version (02/05/31)
+;1D sequence with CW decoupling
+;
+;$CLASS=HighRes
+;$DIM=1D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+;$OWNER=Bruker
+# 14 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+; Vineeth Talakottoor (vineethfrancis.physics@gmail.com)
+# 1 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/Avance.incl" 1
+;Avance3.incl
+;   for AV III
+;
+;avance-version (13/06/17)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+
+# 169 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/Avance.incl"
+;$Id: Avance3.incl,v 1.10.2.2 2013/08/30 09:43:33 ber Exp $
+# 15 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse" 2
+
+
+# 18 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+"d11=30m"
+"acqt0=-p1*2/3.1416"
+
+# 1 "mc_line 21 file C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse exp. def. part of mc cmd. before ze"
+; dimension 1D; AQ_mode 
+define delay MCWRK
+define delay MCREST
+"MCREST = 30m - 30m"
+"MCWRK = 0.333333*30m"
+
+    dccorr
+# 21 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+1 ze
+# 1 "mc_line 21 file C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse exp. def. of mc cmd. after ze"
+# 22 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+  ;1u trignl1 ; Trigger Input
+
+  d11 pl26:f2   ; power for CW signal
+# 1 "mc_line 25 file C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse exp. start label for mc cmd."
+2 MCWRK  * 2
+LBLF0, MCWRK
+  MCREST
+# 26 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+  30m reset:f1 reset:f2
+  30m reset5:f1 reset5:f2
+  1u setnmr3 | 6 ; oscilloscop, high to low
+  d1
+  ;(p1 ph1):f1 ; Pulse
+  1u setnmr3 ^ 6 ; oscilloscop, low to high 
+  go=2 ph31 cw:f2 ; Acqucition and CW ON
+# 1 "mc_line 33 file C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse exp. mc cmd. in line"
+  MCWRK do:f2 wr #0
+  MCWRK zd
+  lo to LBLF0 times td0
+
+# 34 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+  ;30m mc #0 to 2 F0(zd) ; Write
+exit
+# 38 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+ph1=0 ;2 2 0 1 3 3 1
+ph31=0 ;2 2 0 1 3 3 1 
+
+
+# 43 "C:/Bruker/TopSpin3.5pl7/exp/stan/nmr/lists/pp/user/zgcw_trig_nopulse"
+;pl1 : f1 channel - power level for pulse (default)
+;pl26: f2 channel - power level for cw decoupling
+;p1 : f1 channel -  high power pulse
+;d1 : relaxation delay; 1-5 * T1
+;d11: delay for disk I/O                             [30 msec]
+;NS: 1 * n, total number of scans: NS * TD0
+;  Trigger Input (negative level, ref page 70)
+
+
+;$Id: zgcw,v 1.9 2005/11/10 12:17:01 ber Exp $
